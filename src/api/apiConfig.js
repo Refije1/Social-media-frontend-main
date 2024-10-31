@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3001/"; // if we include the "/" we have to take care not to include it in routes
+const BASE_URL = "https://social-media-backend-main.vercel.app/"; // if we include the "/" we have to take care not to include it in routes
 const API_ROUTES = {
   //  define routes here, so we can use them without making spelling mistakes
   //  we redefine route when backend routes are ready
@@ -26,7 +26,7 @@ const API_ROUTES = {
   getSentRequests: "/get-send-request",
   cancelFriendRequest: "/cancel-request",
   profileViews: "/profile-view",
-  addProfilePic: "/users/profilePicture/" //:userId
+  addProfilePic: "/users/profilePicture/", //:userId
 };
 
 export { BASE_URL, API_ROUTES };
