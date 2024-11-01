@@ -24,7 +24,7 @@
   position: relative;
   z-index: 1;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(218, 241, 247, 0.9);
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -79,7 +79,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
-  transform: translateX(15%);
+  transform: translateX(13%);
 }
 
 .button:hover {
