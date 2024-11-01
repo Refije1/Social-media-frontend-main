@@ -26,7 +26,7 @@ const Register = () => {
     birthday: "",
   });
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const userStatus = useSelector(selectRegisteredStatus);
   const userError = useSelector(selectRegisteredError);
@@ -42,9 +42,11 @@ const Register = () => {
     // when the inputs are filled, we validate the form data, and let the useEffect dispatch the action of sending the post register request, depending on the validity of formErrors
     setFormErrors(validateForm(formData));
     if (!formErrors.error) {
-      dispatch(registerUser(formData)).then(() =>  setLoading(false)).catch((error) => {
-        console.log(error);
-      })
+      dispatch(registerUser(formData))
+        .then(() => setLoading(false))
+        .catch((error) => {
+          console.log(error);
+        });
     }
   };
 
@@ -167,24 +169,21 @@ const Register = () => {
               label="Birthday"
             />
           </div>
-          {!loading &&
+          {!loading && (
             <button type="submit" className={classes.button}>
               Sign Up
             </button>
-          }
-          {loading && 
+          )}
+          {loading && (
             <button className={classes.button}>
               <span>
                 <FaSpinner className={classes.spinner} />{" "}
               </span>
-          </button>
-          }
+            </button>
+          )}
         </form>
       </div>
       <section className={classes.footerSection}>
-        <div className={classes.quote}>
-          Connect, Share, Thrive: Where Social Worlds Unite!
-        </div>
         <Footer />
       </section>
     </div>

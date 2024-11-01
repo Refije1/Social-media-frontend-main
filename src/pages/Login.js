@@ -108,9 +108,6 @@ const Login = () => {
         </form>
       </div>
       <section className={classes.footerSection}>
-        <div className={classes.quote}>
-          Connect, Share, Thrive: Where Social Worlds Unite!
-        </div>
         <Footer />
       </section>
     </div>
